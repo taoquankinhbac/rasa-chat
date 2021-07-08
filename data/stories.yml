@@ -152,3 +152,15 @@ stories:
   - action: utter_ipxi
   - intent: thank
   - action: utter_thank
+- story: Hỏi giá iPhone 8
+  steps:
+  - intent: ask_price_ip8
+  - action: utter_price_ip8
+- story: Hỏi giá iPhone X/XS
+  steps:
+  - intent: ask_price_ipx_xs
+  - action: utter_price_ipx_xs
+- story: Hỏi giá iPhone XI
+  steps:
+  - intent: ask_price_ipxi
+  - action: utter_price_ipxi

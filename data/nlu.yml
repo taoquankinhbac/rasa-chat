@@ -152,3 +152,24 @@ nlu:
     - có ship không Shop
     - bên mình có ship không
     - có ship toàn quốc k
+- intent: ask_price_ip8
+  examples: |
+    - ip8 giá bao nhiêu
+    - giá ip 8
+    - ip8 giá ntn
+    - ip 8 giá như thế nào
+    - iphone 8 giá bao nhiêu
+    - giá iphone 8
+- intent: ask_price_ipx_xs
+  examples: |
+    - giá ip x
+    - ip x giá bao nhiêu
+    - ip x giá
+    - iphone x giá bao nhiêu
+    - giá iphone x
+    - ip x và xs giờ giá bao nhiêu 
+- intent: ask_price_ipxi
+  examples: |
+    - giá iphone 11
+    - iphone 11 giá bao nhiêu
+    - giá ip 11

@@ -13,7 +13,9 @@ intents:
  - ask_promotion
  - ask_address
  - ask_shipping
-
+ - ask_price_ip8
+ - ask_price_ipx_xs
+ - ask_price_ipxi
 responses:
  utter_greet:
   - text: "Kính chào Quý khách!"
@@ -50,6 +52,12 @@ responses:
   - text: "Shop mình đặt tại địa chỉ Kinh Bắc 88 thành phố Bắc Ninh"
  utter_shipping:
   - text: "Bên mình free ship toàn quốc bạn nhé"
+ utter_price_ip8:
+  - text: "Sản phẩm này bên mình vẫn bán với giá từ 800k"
+ utter_price_ipx_xs:
+  - text: "Sản phẩm này bên mình vẫn bán với giá từ 1200k"
+ utter_price_ipxi:
+  - text: "Sản phẩm này bên mình vẫn bán với giá từ 1500k"
 actions:
 # templates (as they are reply actions),
 # also custom actions if any
@@ -66,6 +74,9 @@ actions:
  - utter_promotion
  - utter_address
  - utter_shipping
+ - utter_price_ip8
+ - utter_price_ipx_xs
+ - utter_price_ipxi
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
