@@ -1,0 +1,154 @@
+version: "2.0"
+stories:
+- story: Chào - tên - hỏi chức năng - chào
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_name
+  - action: utter_ask_name
+  - intent: ask_func_list
+  - action: utter_func_list
+  - intent: bye
+  - action: utter_bye
+- story: Chào  - hỏi chức năng - chào
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_func_list
+  - action: utter_func_list
+  - intent: bye
+  - action: utter_bye
+- story: Chào  - hỏi tên - chào
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_name
+  - action: utter_ask_name
+  - intent: bye
+  - action: utter_bye
+- story: Hỏi tên - hỏi chức năng
+  steps:
+  - intent: ask_name
+  - action: utter_ask_name
+  - intent: ask_func_list
+  - action: utter_func_list
+- story: Cảm ơn
+  steps:
+  - intent: thank
+  - action: utter_thank
+- story: Chào - Địa chỉ - Hỏi iphone 8 - Bảo hành - Khuyến mại - Ship - Cảm ơn
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_address
+  - action: utter_address
+  - intent: ask_ip8
+  - action: utter_ip8
+  - intent: ask_guarantee
+  - action: utter_guarantee
+  - intent: ask_promotion
+  - action: utter_promotion
+  - intent: ask_shipping
+  - action: utter_shipping
+  - intent: thank
+  - action: utter_thank
+- story: Chào - Địa chỉ - Hỏi iphone X/XS - Bảo hành - Khuyến mại - Ship - Cảm ơn
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_address
+  - action: utter_address
+  - intent: ask_ipx_xs
+  - action: utter_ipx_xs
+  - intent: ask_guarantee
+  - action: utter_guarantee
+  - intent: ask_promotion
+  - action: utter_promotion
+  - intent: ask_shipping
+  - action: utter_shipping
+  - intent: thank
+  - action: utter_thank
+- story: Chào - Địa chỉ - Hỏi iphone XI - Bảo hành - Khuyến mại - Ship - Cảm ơn
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_address
+  - action: utter_address
+  - intent: ask_ipxi
+  - action: utter_ipxi
+  - intent: ask_guarantee
+  - action: utter_guarantee
+  - intent: ask_promotion
+  - action: utter_promotion
+  - intent: ask_shipping
+  - action: utter_shipping
+  - intent: thank
+  - action: utter_thank
+- story: Chào - Địa chỉ - Bảo hành - Khuyến mại - Ship - Cảm ơn
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_address
+  - action: utter_address
+  - intent: ask_guarantee
+  - action: utter_guarantee
+  - intent: ask_promotion
+  - action: utter_promotion
+  - intent: ask_shipping
+  - action: utter_shipping
+  - intent: thank
+  - action: utter_thank
+- story: Iphone 8 - Bảo hành - Khuyến mại - Ship - Cảm ơn
+  steps:
+  - intent: ask_ip8
+  - action: utter_ip8
+  - intent: ask_guarantee
+  - action: utter_guarantee
+  - intent: ask_promotion
+  - action: utter_promotion
+  - intent: ask_shipping
+  - action: utter_shipping
+  - intent: thank
+  - action: utter_thank
+- story: Iphone X/XS - Bảo hành - Khuyến mại - Ship - Cảm ơn
+  steps:
+  - intent: ask_ipx_xs
+  - action: utter_ipx_xs
+  - intent: ask_guarantee
+  - action: utter_guarantee
+  - intent: ask_promotion
+  - action: utter_promotion
+  - intent: ask_shipping
+  - action: utter_shipping
+  - intent: thank
+  - action: utter_thank
+- story: Iphone XI - Bảo hành - Khuyến mại - Ship - Cảm ơn
+  steps:
+  - intent: ask_ipxi
+  - action: utter_ipxi
+  - intent: ask_guarantee
+  - action: utter_guarantee
+  - intent: ask_promotion
+  - action: utter_promotion
+  - intent: ask_shipping
+  - action: utter_shipping
+  - intent: thank
+  - action: utter_thank
+- story: Hỏi iPhone 8 - Cảm ơn
+  steps:
+  - intent: ask_ip8
+  - action: utter_ip8
+  - intent: thank
+  - action: utter_thank
+- story: Hỏi iPhone X/XS - Cảm ơn
+  steps:
+  - intent: ask_ipx_xs
+  - action: utter_ipx_xs
+  - intent: thank
+  - action: utter_thank
+- story: Hỏi iPhone XI - Cảm ơn
+  steps:
+  - intent: ask_ipxi
+  - action: utter_ipxi
+  - intent: thank
+  - action: utter_thank

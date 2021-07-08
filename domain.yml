@@ -1,0 +1,71 @@
+version: "2.0"
+
+intents:
+ - greet
+ - thank
+ - bye
+ - ask_func_list
+ - ask_name
+ - ask_ip8
+ - ask_ipx_xs
+ - ask_ipxi
+ - ask_guarantee
+ - ask_promotion
+ - ask_address
+ - ask_shipping
+
+responses:
+ utter_greet:
+  - text: "Kính chào Quý khách!"
+ utter_bye:
+  - text: "Kính chào tạm biệt và mong sớm gặp lại quý khách!"
+  - text: "Kính chào tạm biệt và chúc quý khách một ngày tốt lành!"
+ utter_thank:
+  - text: "Cảm ơn quý khách quá khen ah!"
+  - text: "Dạ không có gì, đó là trách nhiệm của em mà!"
+ utter_func_list:
+  - text: "Em có thể làm được rất nhiều thứ: hát, đọc thơ, đọc chuyện...nhưng giờ em chỉ chat thôi!"
+ utter_ask_name:
+  - text: "Em họ Apple, tên Bot! Người ta hay gọi em là Apple Bot thông minh xinh đẹp giỏi giang nhất vũ trụ ạ! Quý khách cần trợ giúp gì ạ?"
+  - text: "Dạ thưa. Tên Tiếng Việt của em là Trợ lý ảo bán đồ Apple nhưng em thích gọi bằng tên Tiếng Anh là Apple Bot cho nó Tây!"
+ utter_unclear:
+  - text: "Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. "
+ utter_ip8:
+  - text: "Sản phẩm này bên mình vẫn bán với giá từ 800k"
+  - text: "Sản phẩm này bên mình vẫn bán bạn nhé"
+  - text: "Sản phẩm này bên mình vẫn còn hàng nhé"
+ utter_ipx_xs:
+  - text: "Sản phẩm này bên mình vẫn bán với giá từ 1200k"
+  - text: "Sản phẩm này bên mình vẫn bán bạn nhé"
+  - text: "Sản phẩm này bên mình vẫn còn hàng nhé"
+ utter_ipxi:
+  - text: "Sản phẩm này bên mình vẫn bán với giá từ 1500k"
+  - text: "Sản phẩm này bên mình vẫn bán bạn nhé"
+  - text: "Sản phẩm này bên mình vẫn còn hàng nhé"
+ utter_guarantee:
+  - text: "Bên mình sẽ bảo hành 1 đổi 1 trong 7 ngày đầu sử dụng bạn nhé.Với chính sách đổi chả hàng trong vòng 7 ngày quý khách vui lòng để nguyên em mác trên sản phẩm giúp mình."
+ utter_promotion:
+  - text: "Bên mình đang có ct giảm giá 200k cho những người mua máy lần đầu tiên tại shop ạ"
+ utter_address:
+  - text: "Shop mình đặt tại địa chỉ Kinh Bắc 88 thành phố Bắc Ninh"
+ utter_shipping:
+  - text: "Bên mình free ship toàn quốc bạn nhé"
+actions:
+# templates (as they are reply actions),
+# also custom actions if any
+ - utter_greet
+ - utter_bye
+ - utter_unclear
+ - utter_func_list
+ - utter_thank
+ - utter_ask_name
+ - utter_ip8
+ - utter_ipx_xs
+ - utter_ipxi
+ - utter_guarantee
+ - utter_promotion
+ - utter_address
+ - utter_shipping
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
